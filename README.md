@@ -1,6 +1,6 @@
 # Earnings Feed Python SDK
 
-Official Python client for the [Earnings Feed API](https://earningsfeed.com) — SEC filings, insider transactions, and institutional holdings.
+Official Python client for the [Earnings Feed API](https://earningsfeed.com/api) — SEC filings, insider transactions, and institutional holdings.
 
 ## Installation
 

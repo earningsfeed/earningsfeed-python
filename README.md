@@ -1,5 +1,7 @@
 # Earnings Feed Python SDK
 
+[![PyPI](https://img.shields.io/pypi/v/earningsfeed)](https://pypi.org/project/earningsfeed/)
+
 Official Python client for the [Earnings Feed API](https://earningsfeed.com/api) — SEC filings, insider transactions, and institutional holdings.
 
 ## Installation

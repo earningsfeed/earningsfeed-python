@@ -60,6 +60,7 @@ Homepage = "https://earningsfeed.com"
 Documentation = "https://earningsfeed.com/api/docs"
 Repository = "https://github.com/earningsfeed/earningsfeed-python"
 Issues = "https://github.com/earningsfeed/earningsfeed-python/issues"
+PyPI = "https://pypi.org/project/earningsfeed/"
 
 [tool.hatch.build.targets.sdist]
 include = ["/src"]

@@ -1,5 +1,7 @@
 """Exceptions for Earnings Feed API client."""
 
+from __future__ import annotations
+
 
 class EarningsFeedError(Exception):
     """Base exception for Earnings Feed API errors."""

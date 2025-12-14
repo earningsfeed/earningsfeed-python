@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from datetime import date
-from typing import Iterator, Literal, overload
+from typing import Any, Literal
 
 import httpx
 
@@ -76,8 +77,8 @@ class EarningsFeed:
         self,
         method: str,
         path: str,
-        params: dict | None = None,
-    ) -> dict:
+        params: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
         """Make an API request."""
         # Filter out None values from params
         if params:
@@ -110,7 +111,7 @@ class EarningsFeed:
                 raise APIError(
                     f"HTTP {response.status_code}",
                     status_code=response.status_code,
-                )
+                ) from None
 
         return response.json()
 
@@ -121,7 +122,7 @@ class EarningsFeed:
     def __enter__(self) -> EarningsFeed:
         return self
 
-    def __exit__(self, *args) -> None:
+    def __exit__(self, *args: Any) -> None:
         self.close()
 
 

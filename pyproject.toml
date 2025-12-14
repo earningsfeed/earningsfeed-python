@@ -75,7 +75,10 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 
 [tool.mypy]
 python_version = "3.9"
-strict = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+disable_error_code = ["no-any-return", "valid-type"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

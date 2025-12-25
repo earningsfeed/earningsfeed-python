@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "earningsfeed"
-version = "0.1.0"
+version = "0.1.1"
 description = "Official Python SDK for the Earnings Feed API - SEC filings, insider transactions, and institutional holdings"
 readme = "README.md"
 license = "MIT"
